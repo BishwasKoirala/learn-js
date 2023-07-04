@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+
+<html>
+  <head>
+    <title>06a</title>
+      
+  </head>
+
+  <body>
+    <p>
+      greeting page
+    </p>
+
+
+    <script>
+      let input = prompt("input time in hour(0to23)");
+      let hour = parseInt(input);
+      let name = prompt("input your name");
+
+      if (hour >= 6 && hour <= 12) {
+        alert('Good morning'+" "+name);
+      } else if (hour >= 13 && hour<=17 ) {
+        alert('Good Afternoon'+" "+name);
+      } else{
+        alert('good evening'+" "+name);
+      }
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
