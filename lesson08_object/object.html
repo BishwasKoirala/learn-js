@@ -5,6 +5,7 @@
   </head>
   <body>
     <script>
+      /*
       const product = {
         name: 'socks',
         price: 1090
@@ -23,11 +24,43 @@
 
       delete product;
       console.log(product);
+      */
 
       // 4:45:21
+      
+      const product2 = {
+        name: 'shirt',
+        'delivery-time': '1 day',
+        // can also add inner object #nested objects
+        rating: {
+          stars: 4.5,
+          count: 87
+        },
+        fun: function(){
+          console.log("function inside an object")
+        }
+      };
 
+      console.log(product2);
+      console.log(product2.name); 
+      // called bracket notation
+      // can be used where dot notation doesnt works
+      console.log(product2['name'])
 
-       
+      // here dot notation canot done because JS take it as substtraction
+      // console.log(product2.delivery-time);
+
+      console.log(product2['delivery-time']);
+
+      console.log(product2.rating.count);
+
+      product2.fun();
+
+      console.log(typeof console);
+      console.log(typeof console.log);
+
+      // 5:12:35
+
     </script>
   </body>
 </html>
