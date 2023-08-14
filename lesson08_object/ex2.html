@@ -8,10 +8,25 @@
   <body>
     <script>
       function comparePrice(product1,product2) {
-        if () {
-          
+        if (product1.pricce < product2.price) {
+          return product1;
+        } else {
+          return product2;
         }
-      }
+      };
+
+      const product1 = {
+        name:"hat",
+        price:299
+      };
+      
+      const product2 = {
+        name:"cap",
+        price:199
+      };
+
+      console.log(comparePrice(product1,product2))
+
     </script>
   </body>
 </html>
