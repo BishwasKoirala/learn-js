@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8.e</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function isSameProduct (product1,product2) {
+        if (product1.name && product1.price === product2.name && product2.price) {
+          return true
+        } else {
+          return false
+        }
+      };
+      */
+
+      // answer for the function part
+      function isSameProduct(product1,product2){
+        if (product1.name === product2.name &&
+         product1.price === product2.price) {
+          return true;
+        } else {
+          return false;
+        }
+      };
+
+      // dont forget to add const or let in variables
+      const product1 = {
+        name:'baseball',
+        price:100
+      };
+
+
+      const product2 = {
+        name:'baseball',
+        price:100
+      };
+
+      const product3 = {
+        name:'baseball',
+        price:50
+      };
+
+      const product4 = {
+        name:'hockey',
+        price:600
+      }
+
+
+      console.log(isSameProduct(product1,product2))
+      console.log(isSameProduct(product1,product3))
+      console.log(isSameProduct(product1,product4))
+      
+      
+    </script>
+  </body>
+</html>
