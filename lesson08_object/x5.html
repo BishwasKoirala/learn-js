@@ -1,16 +1,14 @@
+<!-- I can figure it out so just copy pasted it -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      5h
-    </title>
-  </head>
+  <head></head>
   <body>
+    <!-- Code changes are at the bottom. -->
     <p>
       <button onclick="
         updateCalculation('1');
       ">1</button>
-      
+
       <button onclick="
         updateCalculation('2');
       ">2</button>
@@ -28,7 +26,7 @@
       <button onclick="
         updateCalculation('4');
       ">4</button>
-      
+
       <button onclick="
         updateCalculation('5');
       ">5</button>
@@ -46,7 +44,7 @@
       <button onclick="
         updateCalculation('7');
       ">7</button>
-      
+
       <button onclick="
         updateCalculation('8');
       ">8</button>
@@ -64,7 +62,7 @@
       <button onclick="
         updateCalculation('0');
       ">0</button>
-      
+
       <button onclick="
         updateCalculation('.');
       ">.</button>
@@ -72,6 +70,9 @@
       <button onclick="
         calculation = eval(calculation);
         console.log(calculation);
+
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
       ">=</button>
 
       <button onclick="
@@ -83,21 +84,26 @@
       <button onclick="
         calculation = '';
         console.log(calculation);
+
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
       ">Clear</button>
     </p>
-   
+
     <script>
-      let calculation = JSON.parse(localStorage.getItem
-      ('calculation')) || {
-        calculation : 0
-      };;
+      let calculation = localStorage.getItem('calculation') || '';
 
       function updateCalculation(value) {
         calculation += value;
         console.log(calculation);
+        localStorage.setItem('calculation', calculation);
       }
 
-      localStorage.setItem('calculation',JSON.stringify(calculation));
+      // Optional: you can also create a function in order
+      // to reuse this code.
+      function saveCalculation() {
+        localStorage.setItem('calculation', calculation);
+      }
     </script>
   </body>
 </html>
