@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>
-      8i
+      8i,j
     </title>
   </head>
   <body>
@@ -16,15 +16,30 @@
       ">tails
     </button>
     <script>
+      // think what I am learning
+      // I am learnig objects so , its ovious that i will be using them
+
+      let score = {
+        wins:0,
+        looses:0
+      };
+
       function playgame (guess){
         const randomNumber = Math.random();
         const result = randomNumber < 0.5 ? 'heads' : 'tails';
         
-        console.log( guess === result? 'you win' : 'you lose');
+        console.log(guess === result ? 'You win!' : 'You lose!');
+
+        if (guess === result) {
+          score.wins ++;
+        } else {
+          score.looses ++;
+        }
+        console.log(score)
       }
        
-      const randomNumber = Math.random();
-      const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+
     </script>
   </body>
 </html>
