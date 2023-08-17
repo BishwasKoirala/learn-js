@@ -16,10 +16,13 @@
       ">tails
     </button>
     <script>
+
+
+
       // think what I am learning
       // I am learnig objects so , its ovious that i will be using them
 
-      let score = {
+      const score = JSON.parse(localStorage.getItem('score')) || {
         wins:0,
         looses:0
       };
@@ -35,8 +38,11 @@
         } else {
           score.looses ++;
         }
-        console.log(score)
+        console.log(score);
       }
+
+      localStorage.setItem('score', JSON.stringify(score));
+
        
 
 
