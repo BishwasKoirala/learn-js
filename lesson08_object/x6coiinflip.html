@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      8i
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      playgame('heads');
+      ">heads
+    </button>
+
+    <button onclick="
+      playgame('tails');
+      ">tails
+    </button>
+    <script>
+      function playgame (guess){
+        const randomNumber = Math.random();
+        const result = randomNumber < 0.5 ? 'heads' : 'tails';
+        
+        console.log( guess === result? 'you win' : 'you lose');
+      }
+       
+      const randomNumber = Math.random();
+      const result = randomNumber < 0.5 ? 'heads' : 'tails';
+    </script>
+  </body>
+</html>
