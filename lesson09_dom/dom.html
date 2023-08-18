@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      DOM
+    </title>
+    <body>
+      <button>
+        hello
+      </button>
+
+      <button class="js-button">
+        second button
+      </button>
+
+      <script>
+        // selects the button element and returns html inside it
+        console.log(document.querySelector('button').innerHTML);
+
+        // can also change line
+        document.querySelector('button')
+          .innerHTML = "changed";
+
+        // use class selector to choose from same elements
+        // aslong as Html are Js object, It can be saved in variables
+        console.log(document.querySelector('.js-button'));
+
+
+        /*
+        // we can use it to either get or change title
+        console.log(document.title);
+        document.title = "changed";
+
+        console.log(document.body);
+        console.log(typeof document.body);
+
+        console.log(document.body.innerHTML);
+
+        document.body.innerHTML = '<button>Good Job</button>';
+        */
+
+        // when we change this proper it aso changes the webpage
+        /*
+        document.body.innerHTML = "Hello";
+        document.title = "Good Job"
+        */
+
+
+      </script>
+    </body>
+  </head>
+</html>
+<!-- 6:15:56 -->
