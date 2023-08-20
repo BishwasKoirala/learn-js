@@ -3,13 +3,15 @@
   <head>
     <title>9d</title>
     <body>
-      <input placeholder="Name" class="js-name-input">
+      <input placeholder="Name" class="js-name-input" />
 
-      <button onclick="
+      <button
+        onclick="
         const inputElement = document.querySelector('.js-name-input');
         document.querySelector('.js-message')
         .innerHTML = `Your name is: ${inputElement.value}`;
-        ">
+        "
+      >
         submit
       </button>
 

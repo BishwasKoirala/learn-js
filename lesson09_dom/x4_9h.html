@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input
+      placeholder="type something"
+      class="js-inputbox"
+      onkeyup="displayMessage()"
+    />
+    <p class="js-return"></p>
+
+    <script>
+      function displayMessage() {
+        const inputElement = document.querySelector(".js-inputbox");
+        document.querySelector(
+          ".js-return"
+        ).innerHTML = `${inputElement.value}`;
+      }
+    </script>
+  </body>
+</html>
