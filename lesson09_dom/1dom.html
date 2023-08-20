@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
-      DOM
-    </title>
+    <title>DOM</title>
     <body>
-      <button>
-        hello
-      </button>
+      <button>hello</button>
 
-      <button class="js-button">
-        second button
-      </button>
+      <button class="js-button">second button</button>
 
       <script>
         // selects the button element and returns html inside it
-        console.log(document.querySelector('button').innerHTML);
+        console.log(document.querySelector("button").innerHTML);
 
         // can also change line
-        document.querySelector('button')
-          .innerHTML = "changed";
+        document.querySelector("button").innerHTML = "changed";
 
         // use class selector to choose from same elements
         // aslong as Html are Js object, It can be saved in variables
-        const buttonElement = document.querySelector('.js-button');
+        const buttonElement = document.querySelector(".js-button");
 
-        console.log (buttonElement)
+        console.log(buttonElement);
 
         /*
         // we can use it to either get or change title
@@ -45,8 +38,6 @@
         document.body.innerHTML = "Hello";
         document.title = "Good Job"
         */
-
-
       </script>
     </body>
   </head>

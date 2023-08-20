@@ -5,52 +5,58 @@
   </head>
   <body>
     <p>Youtube Subscribe Button</p>
-    <button onclick="
+    <button
+      onclick="
       Subscribe();
-    " class="js-subscribe-button">
+    "
+      class="js-subscribe-button"
+    >
       Subscribe
     </button>
-    
+
     <p>Amazon shipping calculator</p>
-    <input placeholder="input cost of the order"
-     class="js-cost-input" onkeydown="handleCostKeydown(event)">
-    <button onclick="
+    <input
+      placeholder="input cost of the order"
+      class="js-cost-input"
+      onkeydown="handleCostKeydown(event)"
+    />
+    <button
+      onclick="
       calculateTotal()
-    ">calculate</button>
+    "
+    >
+      calculate
+    </button>
     <p class="js-total-cost"></p>
 
     <script>
-      
-
-      function handleCostKeydown(event){
+      function handleCostKeydown(event) {
         console.log(event.key);
-        if (event.key === 'Enter') {
-        calculateTotal()
+        if (event.key === "Enter") {
+          calculateTotal();
         }
       }
       function calculateTotal() {
-        const inputElement = document.querySelector('.js-cost-input');
+        const inputElement = document.querySelector(".js-cost-input");
         let cost = Number(inputElement.value);
-        
 
-        if(cost < 40){
+        if (cost < 40) {
           cost += 10;
         }
 
-        document.querySelector('.js-total-cost')
-          .innerHTML = `${cost}`;
-      };
+        document.querySelector(".js-total-cost").innerHTML = `${cost}`;
+      }
 
       function Subscribe() {
-        const buttonElement = document.querySelector('.js-subscribe-button');
+        const buttonElement = document.querySelector(".js-subscribe-button");
 
         // using innerHTML bugs if we have spaces so use inner text.
-        if (buttonElement.innerText === 'Subscribe') {
-          buttonElement.innerHTML = 'Subscribed';
+        if (buttonElement.innerText === "Subscribe") {
+          buttonElement.innerHTML = "Subscribed";
         } else {
-          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.innerHTML = "Subscribe";
         }
-        }
+      }
     </script>
   </body>
 </html>
