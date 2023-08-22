@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button {
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        border: none;
+        padding: 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      /* just add the thing that will be added */
+      .toggled-on {
+        color: black;
+        background-color: rgb(230, 230, 230);
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="toggleOn()" class="button">Gamming</button>
+    <button onclick="toggleOn()" class="button"></button>
+
+    <script>
+      function toggleOn(selector) {
+        const button = document.querySelector(selector);
+
+        if (!button.classList.contains('toggled-on')) {
+          button.classList.add('toggled-on');
+        } else {
+          button.classList.remove('toggled-on');
+        }
+      }
+    </script>
+  </body>
+</html>
