@@ -12,18 +12,26 @@
         cursor: pointer;
       }
 
-      .gaming-toggled-on {
-        font-size: 30px;
+      /* just add the thing that will be added */
+      .toggled-on {
         color: black;
         background-color: rgb(230, 230, 230);
-        border: none;
-        padding: 20px 30px;
-        border-radius: 10px;
-        cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <button class="gamming-button">Gamming</button>
+    <button onclick="toggleOn()" class="gamming-button">Gamming</button>
+
+    <script>
+      function toggleOn() {
+        const gaming = document.querySelector(".gamming-button");
+
+        if (gaming.classList.contains("toggled-on")) {
+          gaming.classList.remove("toggled-on");
+        } else {
+          gaming.classList.add("toggled-on");
+        }
+      }
+    </script>
   </body>
 </html>
