@@ -27,12 +27,18 @@
       }
 
       .cost-input {
-        /* font: size 15px;
+        font: size 15px;
+
+        /* 
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: 10px;
         padding-left: 10px; */
         padding: 10px;
+      }
+
+      .error-message {
+        color: red;
       }
 
       .calculate-button {
@@ -75,6 +81,9 @@
     </button>
     <p class="js-total-cost"></p>
 
+    <!-- element to display error -->
+    <p class="js-error-message error-message"></p>
+
     <script>
       String(25);
       console.log("25" - 5);
@@ -94,14 +103,22 @@
         const inputElement = document.querySelector(".js-cost-input");
         let cost = Number(inputElement.value);
 
-        if(checkError(cost)){
-          return
-        };
+        //first reset previous message
+        document.querySelector(".js-total-cost").innerHTML = "";
+        document.querySelector(".js-error-message").innerHTML = "";
+
+        if (cost < 1) {
+          document.querySelector(".js-error-message").innerHTML =
+            "Error: cost cant be less than 0 ";
+
+          return;
+        }
 
         if (cost < 40) {
           cost = cost + 10;
-          document.querySelector(".js-total-cost").innerHTML = `$${cost}`;
         }
+
+        document.querySelector(".js-total-cost").innerHTML = `$${cost}`;
       }
 
       function subscribe() {
@@ -113,15 +130,6 @@
         } else {
           buttonElement.innerHTML = "Subscribe";
           buttonElement.classList.remove("is-subscribed");
-        }
-      }
-
-      function checkError() {
-        let cost = document.querySelector(".js-cost-input");
-        if (cost < 1) {
-          document.querySelector(
-            ".js-total-cost"
-          ).innerHTML = `ERROR: cost cannot be less than $0`;
         }
       }
     </script>
