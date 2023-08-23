@@ -1,0 +1,15 @@
+.js-button {
+  font-size: 30px;
+  color: black;
+  background-color: rgb(230, 230, 230);
+  border: none;
+  padding: 20px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* just add the thing that will be added */
+.toggled-on {
+  color: white;
+  background-color: black;
+}
