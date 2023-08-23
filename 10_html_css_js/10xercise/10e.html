@@ -2,7 +2,7 @@
 <html>
   <head>
     <style>
-      .button {
+      .js-button {
         font-size: 30px;
         color: white;
         background-color: black;
@@ -20,17 +20,21 @@
     </style>
   </head>
   <body>
-    <button onclick="toggleOn()" class="button">Gamming</button>
-    <button onclick="toggleOn()" class="button"></button>
+    <!-- we are adding'.'in the function parameter because query selector uses it to select element through class -->
+    <button onclick="toggleOn('.gaming')" class="js-button gaming">
+      Gamming
+    </button>
+    <button onclick="toggleOn('.music')" class="js-button music">Music</button>
+    <button onclick="toggleOn('.tech')" class="js-button tech">Tech</button>
 
     <script>
       function toggleOn(selector) {
         const button = document.querySelector(selector);
 
-        if (!button.classList.contains('toggled-on')) {
-          button.classList.add('toggled-on');
+        if (!button.classList.contains("toggled-on")) {
+          button.classList.add("toggled-on");
         } else {
-          button.classList.remove('toggled-on');
+          button.classList.remove("toggled-on");
         }
       }
     </script>
