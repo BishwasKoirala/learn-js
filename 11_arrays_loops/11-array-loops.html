@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>arrays and loops</title>
+  </head>
+  <body>
+    <script>
+      const array = [10, 20, 30];
+      console.log(array);
+
+      console.log(array[0]);
+      // represents the location of the value the index0 value
+
+      console.log(array[1]);
+      // gives us second value which is 20 .index value 1
+
+      array[0] = 99;
+      // can change the value inside array ie here the value of the first thing
+      console.log(array);
+
+      [1, "hello", true, { name: "socks" }, [1, 2]];
+      // we can store string,number,bool,object,and arrays itslf
+
+      console.log(typeof [1, 2]);
+      // well array is an object but a special type of a object!!
+
+      console.log(Array.isArray([1, 2]));
+      // check weather smthg is an arry or not.gives true or false values
+
+      console.log(array.length);
+      // tells how many values are there in a array
+
+      array.push(100);
+      console.log(array);
+      // adds 100 at the end of the array
+
+      array.splice(0, 1);
+      console.log(array)
+      // removes value from array → removes(indexOfvalue,howmanyvalue)
+
+    </script>
+  </body>
+</html>
