@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      let numarray1 = [1,2,3]
+      let numarray2 = [-2,-1,0,99]
+
+
+      function increaseOne (array) {
+
+        let reasult = [];
+
+
+        for (let i = 0; i < array.length;i ++){
+          let increasing = array[i]+1;
+          reasult.push(increasing)
+          console.log(reasult)
+        }
+      }
+
+      //模範解答
+      function addOne(array) {
+        const result = [];
+
+        for (let i = 0; i < array.length; i++) {
+          result.push(array[i] + 1);
+        }
+
+        return result;
+      }
+
+      console.log(addOne([1, 2, 3]));
+      console.log(addOne([-2, -1, 0, 99]));
+      
+    </script>
+  </body>
+</html>
