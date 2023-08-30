@@ -5,10 +5,25 @@
   </head>
   <body>
     <script>
-      
-      function addNum(array,num) {
+      let array1 = [1,2,3];
+      let number1 = 1;
+
+
+      function addNum(array, num) {
         //select array and howmuch to add inside them
-        
+
+        // this variable is outside the loop!!
+        let result = [];
+
+        for (let i = 0; i < array.length; i++) {
+
+          
+          let calculate = array[i] + num;
+          result.push(calculate);
+          console.log(result)
+        }
+
+        console.log("the reasult is "+result)
       }
     </script>
   </body>
