@@ -8,8 +8,24 @@
       
       function countWords(sringArray) {
         
+        const result = {};
+         
+        for(let i = 0 ; i < sringArray.length ; i ++) {
+          let value = sringArray[i];
+
+          if (!result[value]) {
+            result[value] = 1;
+          } else {
+            result[value] ++;
+          }
+
+        }
+
+        return result;
       }
       
+        console.log(countWords(['apple','ball','cat','dog','nigga','cat']))
+
       
       
     </script>
