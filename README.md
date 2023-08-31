@@ -17,4 +17,3 @@ https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 
 
 next do exercise 11-l-m-n
-do exercise 11l again!!
