@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function minMax(nums) {
+        let min = nums[0];
+        let max = nums[0];
+
+        for (let i = 0; i < nums.length; i++) {
+          let value = nums[i];
+          if (max === null || value > max) {
+            max = value;
+          }
+          if (min === null || value < min) {
+            min = value;
+          }
+        }
+        console.log(`min:${min} max:${max}`);
+      }
+
+      const numbers = [5, 2, 9, 1, 5, -6];
+
+      minMax(numbers);
+    </script>
+  </body>
+</html>
