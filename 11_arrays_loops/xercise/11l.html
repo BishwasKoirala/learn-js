@@ -4,13 +4,12 @@
     <title></title>
   </head>
   <body>
-    <a href="https://user-images.githubusercontent.com/70604577/229876013-abbd7acb-3b3c-49ae-be2a-ed3f65e416cc.png"></a>
     <script>
       function minMax(nums) {
         let min = nums[0];
         let max = nums[0];
 
-        for(let i = 0 ; i < nums.length; i ++) {
+        for (let i = 0; i < nums.length; i++) {
           let value = nums[i];
           if (value > max) {
             max = value;
@@ -21,7 +20,9 @@
         }
         console.log(`min:${min} max:${max}`);
       }
+
       const numbers = [5, 2, 9, 1, 5, -6];
+
       minMax(numbers);
     </script>
   </body>
