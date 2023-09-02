@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function minMax(nums) {
+        let result = {
+          min: null,
+          max: null,
+        };
+
+        for (let i = 0; i < nums.length ; i++) {
+          let num = nums[i];
+          // result.min = num;
+
+          if ( num < result.min) {
+            result.min = num;
+          }
+          // result.max = num;
+          if (num > result.max) {
+            result.max = num;
+          }
+          
+        }
+        console.log(result.min, result.max);
+      }
+          minMax([22])
+    </script>
+  </body>
+</html>
