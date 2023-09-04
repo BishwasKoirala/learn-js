@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function countWords(words) {
+        let result = {};
+
+        for (let i = 0; i < words.length; i++) {
+          let word = words[i];
+
+          if (result[word]) {
+            result[word]++;
+          } else {
+            result[word] = 1;
+          }
+
+          // console.log(word)
+        }
+        return result;
+      }
+
+      let example = ["ball", "cat", "nick", "sick", "nick", "ball", "house"];
+
+      console.log(countWords(example));
+    </script>
+  </body>
+</html>
