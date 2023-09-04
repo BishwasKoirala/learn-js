@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      let array1 = ["search", "had", "bat", "none", "big"];
+      let array2 = ["big", "cat", "sueyou"];
+
+      let index = -1
+      // if the string not found , it will be -1 
+      function findString(array, string) {
+        for (let i = 0; i < array.length; i++) {
+          let iIndex = i
+          let word = array[i];
+          if (word === string) {
+            index = iIndex;
+          } 
+        }
+        return index;
+
+      }
+
+      console.log(findString(array1,"search"))
+      console.log(findString(array2,"search"))
+
+    </script>
+  </body>
+</html>

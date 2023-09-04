@@ -16,5 +16,4 @@ https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutio
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 
 
-<!-- do exercise 11-l-m-n again . need to revise it MF -->
-<!-- 9:41:19 -->
+next just do the remaining exercises from 11o~!!!!
