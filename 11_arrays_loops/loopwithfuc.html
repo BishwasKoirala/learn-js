@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function doubleArray(nums) {
+        const numsDoubled = [];
+
+        for (let i = 0; i < nums.length; i++) {
+          const num = nums[i];
+          if (num === 0) {
+            // return is another way of breaking a loop
+            return numsDoubled;
+          }
+          numsDoubled.push(num * 2);
+        }
+        // console.log(numsDoubled);
+        // instead of console.log, use return
+        return numsDoubled;
+      }
+      // consolelog here
+      console.log(doubleArray([1, 1, 3,0,5]));
+    </script>
+  </body>
+</html>
