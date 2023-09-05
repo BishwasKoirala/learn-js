@@ -4,6 +4,33 @@
     <title></title>
   </head>
   <body>
-    <script></script>
+    <script>
+      array1 = ["bishwas", "search", "goood",'search'];
+
+      function findString(array,string) {
+        let index = 'not found'
+        for (let i = 0; i < array.length; i ++) {
+          if (array[i] === string) {
+            index = i;
+            return index
+          }
+        }
+
+        console.log(`the string index is :`+index)
+      }
+
+
+
+
+
+      // let index = "string not found"
+      // for (let i = 0; i < array1.length; i++) {
+      //   if (array1[i] === 'search') {
+      //     index = i;
+      //   }
+      // }
+
+      // console.log(index)
+    </script>
   </body>
 </html>
