@@ -5,23 +5,20 @@
   </head>
   <body>
     <script>
-      array1 = ["bishwas", "search", "goood",'search'];
+      array1 = ["bishwas", "search", "goood", "search"];
 
-      function findString(array,string) {
-        let index = 'not found'
-        for (let i = 0; i < array.length; i ++) {
+      function findString(array, string) {
+        let index = "not found";
+        for (let i = 0; i < array.length; i++) {
           if (array[i] === string) {
             index = i;
-            return index
+            return index;
+            break;
           }
         }
 
-        console.log(`the string index is :`+index)
+        console.log(`the string index is :` + index);
       }
-
-
-
-
 
       // let index = "string not found"
       // for (let i = 0; i < array1.length; i++) {
