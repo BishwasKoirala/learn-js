@@ -5,7 +5,27 @@
   </head>
   <body>
     <script>
-      function removeString(array,string)
+      function removeString(strings,remove) {
+
+        let filteredStrings = [];
+        
+        for (let i = 0 ; i < strings.length ; i ++) {
+          let string = strings[i];
+          if (remove === string) {
+            strings.pop(remove);
+            
+
+          } 
+        }
+        return strings;
+
+        
+      }
+
+      let strings1 = ('atring','string','cat','bold','nigeria')
+
+
+
       
     </script>
   </body>
