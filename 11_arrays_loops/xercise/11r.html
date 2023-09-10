@@ -5,24 +5,24 @@
   </head>
   <body>
     <script>
-      function removeString(strings,remove) {
+      function removeStrings(strings,toRemove) {
 
         let filteredStrings = [];
         
         for (let i = 0 ; i < strings.length ; i ++) {
           let string = strings[i];
-          if (remove === string) {
-            strings.pop(remove);
-            
-
+          if (!toRemove.includes(string)) {
+            filteredStrings.push(string);
           } 
         }
-        return strings;
 
-        
+        return filteredStrings;
       }
 
-      let strings1 = ('atring','string','cat','bold','nigeria')
+
+      let strings1 = ['atring','string','cat','bold','nigeria']
+
+      console.log(removeStrings(strings1,['bold']))
 
 
 
