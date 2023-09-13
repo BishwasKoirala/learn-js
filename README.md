@@ -16,4 +16,3 @@ https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutio
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 
 
-next just do the remaining exercises from 11o~!!!!
