@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>advanced functions</title>
+  </head>
+  <body>
+    <script>
+      function grreting () {
+        console.log('hello');
+      }
+
+      grreting();
+
+      const num = 2;
+
+      // functions can also be stored in var
+      const function1 = function greeting () {
+        console.log('hello2')
+      };
+
+
+      console.log(function1)
+      console.log(typeof function1)
+      // its data type is function
+
+      function1();
+      // we can siply call the function as well
+
+      const object1 = {
+        num : 2,
+        fun: function greeting() {
+          console.log('hello3')
+        }
+      }
+
+      object1.fun();
+
+      
+      function display (param) {
+        console.log(param)
+      }
+      // caan use parameter and use it by intering vlue
+      display(2);
+
+      function run (param) {
+        param();
+      }
+      run(function(){
+        console.log('hello4');
+      });
+
+      
+
+    </script>
+  </body>
+</html>
