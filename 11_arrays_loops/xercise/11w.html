@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function findIndex(array, word) {
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] === word) {
+            // Instead of creating an accumulator
+            // variable and updating it in the loop,
+            // we can just return i directly, when
+            // we find it since this is a function.
+            return i;
+          }
+        }
+
+        // If the function has not returned by now,
+        // logically that means the word must not
+        // exist in the array, so we'll return -1.
+        return -1;
+      }
+
+      function unique(array) {
+        // it takes an array and returns array without any dublicate
+
+        let result = [];
+        // add the processed arrays here
+
+        for (let i = 0; i < array.length; i++) {
+          let string = array[i];
+          if (result.includes(string)) {
+            continue;
+          } else {
+            result.push(string);
+          }
+        }
+
+        return result;
+      }
+     
+      let anarray = ["bool","look","book","cook","array",'haunted','nigga','fuck','nigga','book','bool']
+      console.log(anarray)
+      console.log(unique(anarray))
+    </script>
+  </body>
+</html>
