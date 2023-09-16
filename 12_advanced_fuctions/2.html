@@ -5,7 +5,20 @@
   </head>
   <body>
     <script>
-      
+      // its  buitinfunction
+      // a function is gicen in first parameter,time is given in second parameter
+      setTimeout(function () {
+        console.log("timeout");
+      }, 3000);
+
+      console.log("next line");
+
+      // keeps running this every 3 secs
+      setInterval(function () {
+        console.log("interval");
+      }, 3000);
+
+      console.lof('nextline 2');
     </script>
   </body>
 </html>
