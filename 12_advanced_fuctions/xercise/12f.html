@@ -7,18 +7,18 @@
     <button class="button" onclick="popUp()">add to cart</button>
     <p class="popup"></p>
     <script>
+      let timeoutId;
+
       function popUp() {
         let popUpmessage = document.querySelector(".popup");
         popUpmessage.innerHTML = "Added to cart";
 
         // pass a function reference to settimeout , not just call the function.
-        setTimeout(function () {
-          removePopup(popUpmessage);
-        }, 3000);
-      }
+        clearTimeout(timeoutId);
 
-      function removePopup(parameter) {
-        parameter.innerHTML = "";
+        timeoutId = setTimeout(function () {
+          popUpmessage.innerHTML = "";
+        }, 2000);
       }
     </script>
   </body>
