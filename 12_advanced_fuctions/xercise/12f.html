@@ -8,17 +8,19 @@
     <p class="popup"></p>
     <script>
       let timeoutId;
-
       function popUp() {
         let popUpmessage = document.querySelector(".popup");
         popUpmessage.innerHTML = "Added to cart";
 
         // pass a function reference to settimeout , not just call the function.
+        console.log(timeoutId)
         clearTimeout(timeoutId);
+        console.log(timeoutId)
 
         timeoutId = setTimeout(function () {
           popUpmessage.innerHTML = "";
         }, 2000);
+        console.log(timeoutId)
       }
     </script>
   </body>
