@@ -4,7 +4,9 @@ function removeEggs (foods,eggs) {
     if (index === eggs && removedEggs < 2) {
       removedEggs++;
       return false
+      // dont return value if the meets the condition
     }
+    // else , return it!!
     return true
   }) ;
 }
