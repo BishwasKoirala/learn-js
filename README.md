@@ -16,4 +16,4 @@ https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutio
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 
 
-<!-- learn how ex 12o.js code works -->
+<!-- solve all 12p and 12q -->
