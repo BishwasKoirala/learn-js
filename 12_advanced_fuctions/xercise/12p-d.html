@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button class="button" onclick="changeText()">click</button>
+    <script>
+      function changeText () {
+        let button = document.querySelector('.button');
+        button.innerHTML = "Loading..."
+
+        setTimeout(()=> {
+          button.innerHTML = 'Finshed';
+        },1000);
+      }
+
+    </script>
+  </body>
+</html>

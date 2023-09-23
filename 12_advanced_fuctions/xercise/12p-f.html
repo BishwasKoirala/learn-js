@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button class="button" onclick="popUp()">add to cart</button>
+    <p class="popup"></p>
+    <script>
+      let timeoutId;
+      function popUp() {
+        let popUpmessage = document.querySelector(".popup");
+        popUpmessage.innerHTML = "Added to cart";
+
+        // pass a function reference to settimeout , not just call the function.
+        console.log(timeoutId)
+        clearTimeout(timeoutId);
+        console.log(timeoutId)
+
+        timeoutId = setTimeout( () => {
+          popUpmessage.innerHTML = "";
+        }, 2000);
+        console.log(timeoutId)
+      }
+    </script>
+  </body>
+</html>
