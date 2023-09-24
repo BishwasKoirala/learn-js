@@ -30,7 +30,7 @@ function autoplay() {
       playGame(playerMove);
     }, 1000);
     isAutoPlaying = true;
-    autoplayElement.innerHTML = "Playing Auto";
+    autoplayElement.innerHTML = "Stop Autoplay";
 
   } else {
     clearInterval(intervalId);
@@ -111,6 +111,5 @@ function pickComputerMove() {
 
   return computerMove;
 }
-
 
 autoplayElement.addEventListener('click',autoplay)
