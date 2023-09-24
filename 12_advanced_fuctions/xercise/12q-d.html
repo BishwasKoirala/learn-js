@@ -6,19 +6,18 @@
   <body>
     <button class="button">click</button>
     <script>
+      const buttonElement = document.querySelector(".button");
 
-      const buttonElement = document.querySelector('.button')
-
-      function changeText () {
-        let button = document.querySelector('.button');
-        button.innerHTML = "Loading..."
+      function changeText() {
+        let button = document.querySelector(".button");
+        button.innerHTML = "Loading...";
 
         setTimeout(function () {
-          button.innerHTML = 'Finshed';
-        },1000);
+          button.innerHTML = "Finshed";
+        }, 1000);
       }
 
-      buttonElement.addEventListener('click',changeText)
+      buttonElement.addEventListener("click", changeText);
     </script>
   </body>
 </html>
