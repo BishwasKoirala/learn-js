@@ -1,11 +1,12 @@
-let stringarray = [
+[
   'make dinner',
   'wash dishes',
   'watch youtube'
-];
-
-const afunc = stringarray.forEach(value,index) => {
-  if (value === 'wash dished') {
-    return;
+].forEach((value,index) => {
+    if (value === 'wash dishes') {
+      return;
+    };
+    console.log(index);
+    console.log(value);
   }
-}
+)
