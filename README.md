@@ -1,18 +1,18 @@
 # Learn_JS
 learning JS from SuperSimpleDev_Youtube
 
-
 # SuperSimpleDev
 
   course
 https://www.youtube.com/watch?v=SBmSRK3feww&t=117s
 
-
-  excersise solution
-https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutions
-
+11:33:59
+ 
 
   copy of the code
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 
-<!-- 11:21:16 -->
+
+
+  excersise solution
+https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutions
