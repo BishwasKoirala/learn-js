@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button class="js-button">Click</button>
+    <script>
+      // use addEventListener insted onlick
+
+      const buttonElement = document.querySelector('.js-button');
+
+      const EventListener = () => {
+        console.log('click');
+      }
+
+      buttonElement.addEventListener('click',EventListener);
+      // add event listener first param is event,second is function
+
+      buttonElement.removeEventListener('click',EventListener
+      )
+      // remoes the added event listeners
+
+      buttonElement.addEventListener('click',() => {
+        console.log('click2')
+      });
+      // addEventListener allows to add multiple listener on one event
+
+
+
+    </script>
+  </body>
+</html>

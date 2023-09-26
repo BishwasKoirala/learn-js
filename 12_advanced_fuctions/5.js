@@ -6,7 +6,7 @@
     if (value === 'wash dishes') {
       return;
     };
-    console.log(index);
     console.log(value);
+    console.log(index);
   }
 )
