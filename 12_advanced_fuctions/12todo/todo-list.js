@@ -31,10 +31,11 @@ function rendertodoList() {
 
   document.querySelectorAll('.js-delete-todo-button').forEach((deleteButton,index) => {
     deleteButton.addEventListener('click',() => {
+      console.log(index);
       todoList.splice(index,1);
       rendertodoList()
     });
-  })
+  });
 }
 
 document.querySelector('.js-add-todo-button')
