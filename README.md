@@ -6,8 +6,7 @@ learning JS from SuperSimpleDev_Youtube
   course
 https://www.youtube.com/watch?v=SBmSRK3feww&t=117s
 
-11:33:59
- 
+ 11:52:05 
 
   copy of the code
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
