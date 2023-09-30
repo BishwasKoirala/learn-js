@@ -11,7 +11,7 @@ let num1 = 2;
 
 // console.log(AddNum(array1, num1));
 
-// dowith for each
+// dowith .map
 function addNum(array, num) {
   let result = array.map((value) => value + num);
   return result;
