@@ -1,11 +1,11 @@
 function removeEggs(foods, toRemove) {
   let counter = 0;
   return foods.filter((food) => {
-    if (counter < 2) {
-      return food !== toRemove;
+    if (food === toRemove && counter < 2) {
       counter ++
+      return food !== toRemove;
     } else {
-      return food !== toRemove
+      return food 
     }
   });
 }
