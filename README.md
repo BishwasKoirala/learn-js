@@ -11,7 +11,6 @@ https://www.youtube.com/watch?v=SBmSRK3feww&t=117s
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 
 
-
   excersise solution
 https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutions
 
