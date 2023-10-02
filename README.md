@@ -15,4 +15,4 @@ https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
 https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutions
 
 
-<!-- solve exercide and go to part2 -->
+review 12r-to 12v someday
