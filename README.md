@@ -6,7 +6,7 @@ learning JS from SuperSimpleDev_Youtube
   course
 https://www.youtube.com/watch?v=SBmSRK3feww&t=117s
 
-  part2
+  <!-- part2 -->
 https://www.youtube.com/watch?v=TmcEmsyYKXE
 
 <!-- 49分 -->
