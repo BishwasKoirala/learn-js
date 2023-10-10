@@ -9,7 +9,8 @@ https://www.youtube.com/watch?v=SBmSRK3feww&t=117s
   <!-- part2 -->
 https://www.youtube.com/watch?v=TmcEmsyYKXE
 
-<!-- 1:19:43  -->
+<!-- part3 -->
+  https://www.youtube.com/watch?v=2exKokkn8o0
 
   copy of the code
 https://github.com/SuperSimpleDev/javascript-course/tree/main/2-copy-of-code
