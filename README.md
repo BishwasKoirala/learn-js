@@ -21,3 +21,6 @@ https://github.com/SuperSimpleDev/javascript-course/tree/main/1-exercise-solutio
 
 
 <!-- review 12r-to 12v someday -->
+
+<!-- next ex2
+ -->
