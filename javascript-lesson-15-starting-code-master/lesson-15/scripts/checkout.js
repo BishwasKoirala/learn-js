@@ -2,6 +2,15 @@ import {cart, removeFromCart} from '../data/cart.js';
 import {products} from '../data/products.js';
 import {formatCurrency} from './utils/money.js';
 
+hello();
+
+const today = dayjs()
+//  .add( param , "link" )
+const deliveryDate = today.add(7 , "days")
+let stringedDeliveryDate =  deliveryDate.format('dddd, MMMM , D')
+
+console.log(stringedDeliveryDate)
+
 let cartSummaryHTML = '';
 
 cart.forEach((cartItem) => {
